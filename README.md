@@ -13,7 +13,7 @@ The purpose of using JSON with Proto.Actor is faster prototyping and testing.
 Serialization.RegisterSerializer(new NewtonsoftSerializer(), true);
 ```
 
-It's worth to note that it requires type information to be stored in json, so when using your own `JsonSerializationSettings` use at least `TypeNameHandling.Auto`, but preferably `TypeNameHandling.All`:
+It's worth to note that it requires type information to be stored in JSON, so when using your own `JsonSerializationSettings` use at least `TypeNameHandling.Auto`, but preferably `TypeNameHandling.All`:
 
 ```csharp
 JsonSerializerSettings settings = new JsonSerializerSettings {
